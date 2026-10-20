@@ -33,11 +33,3 @@ Nine separate tasks demonstrating basic JavaScript, DOM manipulation, and event 
 2. Open `index.html` in a browser (or use Live Server in VS Code).
 3. Use the navigation bar to open each task.
 4. For Tasks 0 and 1, press `F12` and open the browser's **Console** to see the output.
-
-## Publish with GitHub Pages
-
-In the GitHub repository, open **Settings → Pages**. Choose **Deploy from a branch**, select the `main` branch and the `/ (root)` directory, then save. Use the generated URL to test all pages.
-
-## Notes
-
-This is a frontend-only educational project. The calculator runs in the browser and the To-Do list stores tasks in an in-memory array (no backend or localStorage). Refreshing the page clears To-Do tasks.
