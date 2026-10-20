@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+.task-navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+    background-color: #26364a;
+}
+
+.task-navbar a {
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.task-navbar a:hover,
+.task-navbar a.active {
+    background-color: #405978;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.description {
+    color: #555;
+}
+
+label {
+    display: block;
+    margin: 20px 0 8px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #26364a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover {
+    background-color: #405978;
+}
+
+button.secondary {
+    background-color: #6b7280;
+}
+
+button.secondary:hover {
+    background-color: #4b5563;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.example-box {
+    padding: 35px;
+    background-color: lightgray;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hover-box {
+    cursor: pointer;
+}
+
+.simple-list li {
+    padding: 5px 0;
+}
+
+.todo-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-controls input {
+    flex: 1;
+    min-width: 0;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-item span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.todo-item .completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    .todo-controls {
+        flex-direction: column;
+    }
+}

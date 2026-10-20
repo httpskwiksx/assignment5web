@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8 - Interactive To-Do List</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="task-navbar" aria-label="Task navigation">
+            <a href="index.html">Task 0</a>
+            <a href="task1.html">Task 1</a>
+            <a href="task2.html">Task 2</a>
+            <a href="task3.html">Task 3</a>
+            <a href="task4.html">Task 4</a>
+            <a href="task5.html">Task 5</a>
+            <a href="task6.html">Task 6</a>
+            <a href="task7.html">Task 7</a>
+            <a href="task8.html" class="active" aria-current="page">Task 8</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Task 8: Interactive To-Do List</h1>
+        <p class="description">Add tasks, mark them as completed, and delete them.</p>
+        <label for="taskInput">New task:</label>
+        <div class="todo-controls">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button type="button" id="addTask">Add Task</button>
+        </div>
+        <p id="taskMessage" role="status" aria-live="polite"></p>
+        <ul id="taskList" class="todo-list"></ul>
+    </main>
+
+    <script src="JS/task8.js"></script>
+</body>
+</html>
